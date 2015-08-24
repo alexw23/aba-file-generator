@@ -124,12 +124,16 @@ class AbaFileGenerator
     {
         // Record Type
         $line = self::DESCRIPTIVE_TYPE;
+        
+        $line .= str_repeat(' ', 7);
+
+        $line .= str_repeat(' ', 9);
 
         // BSB
-        $line .= $this->bsb;
+        //$line .= $this->bsb;
 
         // Account Number
-        $line .= str_pad($this->accountNumber, 9, ' ', STR_PAD_LEFT);
+        //$line .= str_pad($this->accountNumber, 9, ' ', STR_PAD_LEFT);
 
         // Reserved - must be a single blank space
         $line .= ' ';
